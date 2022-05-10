@@ -1,0 +1,3 @@
+C++ Stroustrup 1979
+Java Gosling 1991
+Russian someone 900
