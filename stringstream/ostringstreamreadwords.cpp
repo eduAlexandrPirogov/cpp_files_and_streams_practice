@@ -17,6 +17,7 @@ int main()
       if(word != "exit")
          os << word << " ";
    };
+   //str() -- returns copy of stream's string
    string result = os.str();
 
    cout << result << '\n';
