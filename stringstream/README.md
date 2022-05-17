@@ -34,6 +34,30 @@ int main()
 };
 ```
 
+`stringstream` удобен для преобразования типов:
+
+`formatstringstream.cpp`
+```cpp
+ int k = 0;
+   double pi = 0.0;
+   string tmp = "hello!";
+
+   stringstream ss;
+
+   ss << "100";
+   ss >> k;
+
+   ss << "3.14159";
+   ss >> pi;
+
+   ss << "string";
+   ss >> tmp;
+
+   cout << "int k = " << k << '\n';
+   cout << "double pi = " << pi << '\n';
+   cout << "string tmp = " << tmp << '\n';
+```
+
 Поскольку `stringstream` -- поток, то к нему можно применять операторы `<<` и `>>` (в зависимости от того, `istringstream` или `ostringstream`)
 
 `stringstream.str()` возвращает копию `string`, которая хранится внутри `stringstream`. 
